@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Магазин.Magas;
 
 namespace Магазин.Pages
 {
@@ -27,7 +28,7 @@ namespace Магазин.Pages
 
         private void btnRegOchova_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Vid());
         }
     }
 }

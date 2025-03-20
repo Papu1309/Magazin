@@ -24,12 +24,12 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Text="Shop"
+        <TextBlock Text="Автозапчасти"
         FontSize="50"
         VerticalAlignment="Center"
         Grid.Row="0"
         Grid.Column="2"
-        Grid.ColumnSpan="2"
+        Grid.ColumnSpan="3"
         TextAlignment="Center"
         Foreground="Brown"
         FontWeight="Bold" 

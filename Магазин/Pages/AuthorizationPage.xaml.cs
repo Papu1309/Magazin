@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Магазин.Magas;
 
 namespace Магазин.Pages
 {
@@ -28,7 +29,7 @@ namespace Магазин.Pages
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Vid());
         }
 
         private void btnReg_Click(object sender, RoutedEventArgs e)

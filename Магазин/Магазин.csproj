@@ -132,5 +132,26 @@
   <ItemGroup>
     <Resource Include="Logo\Shop.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logo\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\AMORT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\vozd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\amortiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\remen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\generator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\radiator.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
