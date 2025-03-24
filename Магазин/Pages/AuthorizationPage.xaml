@@ -5,35 +5,40 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Магазин.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920"
       Title="AuthorizationPage" Background="AliceBlue" >
 
-    <Grid HorizontalAlignment="Center">
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Text="Автозапчасти"
         FontSize="50"
-        VerticalAlignment="Center"
+        VerticalAlignment="Top"
         Grid.Row="0"
         Grid.Column="2"
         Grid.ColumnSpan="3"
-        TextAlignment="Center"
+        HorizontalAlignment="Center"
         Foreground="Brown"
         FontWeight="Bold" 
-               Margin="10"
+               Grid.RowSpan="2"
         />
 
         <TextBlock Text="Авторизация"
@@ -50,16 +55,16 @@
         <TextBlock Text="Логин"
         FontSize="17"
         Grid.Column="2"
-        Grid.Row="1"       
+        Grid.Row="2"       
         Grid.ColumnSpan="2"
         TextAlignment="Center"
         HorizontalAlignment="Center"
         VerticalAlignment="Top"
-               FontStyle="Italic" Margin="0,59,0,0" Grid.RowSpan="2"
+               FontStyle="Italic" 
                 />
         <TextBox x:Name="loginTb"
              FontSize="22"
-             Grid.Column="2     "
+             Grid.Column="2 "
              Grid.Row="2"       
              Grid.ColumnSpan="2"
              Height="40"
@@ -69,12 +74,12 @@
         <TextBlock Text="Пароль"
             FontSize="17"
             Grid.Column="2"
-            Grid.Row="2"       
+            Grid.Row="3"       
             Grid.ColumnSpan="2"
             TextAlignment="Center"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            FontStyle="Italic" Margin="0,58,0,0" Grid.RowSpan="2"/>
+            FontStyle="Italic" />
         <TextBox x:Name="ParolTb"
              FontSize="22"
              Grid.Column="2"
