@@ -23,7 +23,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            
+
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -31,14 +31,12 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Автозапчасти"
         FontSize="50"
-        VerticalAlignment="Top"
-        Grid.Row="0"
+        VerticalAlignment="Center"
         Grid.Column="2"
-        Grid.ColumnSpan="3"
+        Grid.ColumnSpan="2"
         HorizontalAlignment="Center"
         Foreground="Brown"
-        FontWeight="Bold" 
-               Grid.RowSpan="2"
+        FontWeight="Bold"
         />
 
         <TextBlock Text="Авторизация"

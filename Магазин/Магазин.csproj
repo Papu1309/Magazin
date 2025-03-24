@@ -75,6 +75,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Datagrid\Spicok.cs" />
     <Compile Include="Magas\Korzina.xaml.cs">
       <DependentUpon>Korzina.xaml</DependentUpon>
     </Compile>
@@ -133,6 +134,7 @@
     <Resource Include="Logo\Shop.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Connection\" />
     <Folder Include="Logo\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
