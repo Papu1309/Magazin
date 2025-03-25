@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Магазин.Magas"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800" Background="BlanchedAlmond"
+      d:DesignHeight="450" d:DesignWidth="800" Background="BlueViolet"
       Title="Vid" Loaded="Page_Loaded">
-    <Grid>
+    <Grid Margin="0,133,0,0" Background="Coral">
         <!--<Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -52,12 +52,17 @@
         </ScrollViewer>-->
 
 
-
-        <DataGrid x:Name="spicokGrid" AutoGenerateColumns="False">
+        <TextBlock Text="Автозапчасти" Margin="271,-135,271,407" HorizontalAlignment="Center"  FontSize="30" />
+        <StackPanel>
+            <Button  x:Name="btnKorzina" Click="btnKorzina_Click" Margin="0,-133,0,400"  FontFamily="Bold" HorizontalAlignment="Left" Width="50" Height="50">
+              <Image Source="/Korzinafoto/picnic_7489374.png"></Image>
+            </Button>
+        </StackPanel>
+        <DataGrid x:Name="spicokGrid" AutoGenerateColumns="False" Margin="0,-85,0,0" ItemsSource="{Binding Spicoks}">
             <DataGrid.Columns>
                 <DataGridTextColumn IsReadOnly="True" Header="Название" Binding="{Binding Path=Name}" Width="350"></DataGridTextColumn>
                 <DataGridTextColumn IsReadOnly="True" Header="Цена" Binding="{Binding Path=Price}" Width="200"></DataGridTextColumn>
-                <DataGridCheckBoxColumn IsReadOnly="True" Header="Да/Нет" Binding="{Binding Path=Choise}" Width="50"></DataGridCheckBoxColumn>
+                <DataGridCheckBoxColumn Header="Да/Нет" Binding="{Binding Path=Choise}" Width="50"></DataGridCheckBoxColumn>
                 <DataGridTemplateColumn Header="Фото" IsReadOnly="True" Width="300">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

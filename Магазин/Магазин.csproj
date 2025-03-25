@@ -59,10 +59,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Magas\SpicokTovarov.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Magas\Vid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,12 +71,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Datagrid\Spicoks.cs" />
     <Compile Include="Datagrid\Spicok.cs" />
     <Compile Include="Magas\Korzina.xaml.cs">
       <DependentUpon>Korzina.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Magas\SpicokTovarov.xaml.cs">
-      <DependentUpon>SpicokTovarov.xaml</DependentUpon>
     </Compile>
     <Compile Include="Magas\Vid.xaml.cs">
       <DependentUpon>Vid.xaml</DependentUpon>
@@ -154,6 +148,45 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Photo\radiator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\masl filtr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\vod nasos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\starter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\gur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\sceplenie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\colodki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\torm disci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\naconech.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\shrus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\shtamp-disc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\dvornici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\lobovoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Korzinafoto\picnic_7489374.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

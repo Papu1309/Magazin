@@ -25,6 +25,6 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Корзина" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2" Margin="60,10,0,20" FontSize="40" Foreground="Black"/>
+        <TextBlock Text="Корзина" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2" Margin="60,10,0,20" FontSize="40" Foreground="Black" HorizontalAlignment="Center"/>
     </Grid>
 </Page>
