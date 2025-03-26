@@ -28,7 +28,7 @@ namespace Магазин.Pages
 
         private void btnRegOchova_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Vid());
+            NavigationService.Navigate(new aa());
         }
     }
 }

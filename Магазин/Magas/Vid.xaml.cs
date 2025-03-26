@@ -24,50 +24,56 @@ namespace Магазин.Magas
     /// <summary>
     /// Логика взаимодействия для Vid.xaml
     /// </summary>
-    public partial class Vid : Page
+    public partial class aa : Page
     {
-        public BindingList<Spicok> Spicokk;
-
-        public Vid()
+        //public BindingList<Spicok> Spicokk;
+        public List<Spicok> Spicoks { get; set; }
+        public aa()
         {
             InitializeComponent();
-           
-        }
-        
-
-        private void btnKorzina_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Korzina());
+            LoadSpicoks();
+            SpicokListWiew.ItemsSource = Spicoks;
 
         }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        private void LoadSpicoks()
         {
-            Spicokk = new BindingList<Spicok>()
+            Spicoks = new List<Spicok>
             {
-                new Spicok() {Name = "Свечи зажигания",Price = 560,Foto = "/Photo/AMORT.jpg"},
-                new Spicok() {Name = "Амортизаторы", Price = 7840,Foto = "/Photo/amortiz.jpg" },
-                new Spicok() {Name = "Генератор", Price = 13700,Foto = "/Photo/generator.jpg" },
-                new Spicok() {Name = "Радиатор", Price = 9800,Foto = "/Photo/radiator.jpg" },
-                new Spicok() {Name = "Ремень ГРМ c роликом в комплекте", Price = 1790,Foto = "/Photo/remen.jpg" },
-                new Spicok() {Name = "Воздушный фильтр", Price = 3700,Foto = "/Photo/vozd.jpg" },
-                new Spicok() {Name = "Масляной фильтр", Price = 680,Foto = "/Photo/masl filtr.jpg" },
-                new Spicok() {Name = "Водяной насос", Price = 3899,Foto = "/Photo/vod nasos.jpg" },
-                new Spicok() {Name = "Стартер", Price = 16700,Foto = "/Photo/starter.jpg" },
-                new Spicok() {Name = "Гидроусилитель руля", Price = 11399,Foto = "/Photo/gur.jpg" },
-                new Spicok() {Name = "Комплект сцепления", Price = 9399,Foto = "/Photo/sceplenie.jpg" },
-                new Spicok() {Name = "Тормозные колодки", Price = 2390,Foto = "/Photo/colodki.jpg" },
-                new Spicok() {Name = "Тормозные диски", Price = 3890,Foto = "/Photo/torm disci.jpg" },
-                new Spicok() {Name = "Шрус", Price = 5690,Foto = "/Photo/shrus.jpg" },
-                new Spicok() {Name = "Наконечник", Price = 6790,Foto = "/Photo/naconech.jpg" },
-                new Spicok() {Name = "Бескаркасные дворники", Price = 830,Foto = "/Photo/dvornici.jpg" },
-                new Spicok() {Name = "Лобовое стекло", Price = 12399,Foto = "/Photo/lobovoe.jpg" },
-                new Spicok() {Name = "Штампованный диск", Price = 1899,Foto = "/Photo/shtamp-disc.jpg" },
-
-
+                  new Spicok() {Name = "Свечи зажигания",Price = 560,Foto = "/Photo/AMORT.jpg"},
+                  new Spicok() {Name = "Амортизаторы", Price = 7840,Foto = "/Photo/amortiz.jpg" },
+                  new Spicok() {Name = "Генератор", Price = 13700,Foto = "/Photo/generator.jpg" },
+                  new Spicok() {Name = "Радиатор", Price = 9800,Foto = "/Photo/radiator.jpg" },
+                  new Spicok() {Name = "Ремень ГРМ c роликом в комплекте", Price = 1790,Foto = "/Photo/remen.jpg" },
+                  new Spicok() {Name = "Воздушный фильтр", Price = 3700,Foto = "/Photo/vozd.jpg" },
+                  new Spicok() {Name = "Масляной фильтр", Price = 680,Foto = "/Photo/masl filtr.jpg" },
+                  new Spicok() {Name = "Водяной насос", Price = 3899,Foto = "/Photo/vod nasos.jpg" },
+                  new Spicok() {Name = "Стартер", Price = 16700,Foto = "/Photo/starter.jpg" },
+                  new Spicok() {Name = "Гидроусилитель руля", Price = 11399,Foto = "/Photo/gur.jpg" },
+                  new Spicok() {Name = "Комплект сцепления", Price = 9399,Foto = "/Photo/sceplenie.jpg" },
+                  new Spicok() {Name = "Тормозные колодки", Price = 2390,Foto = "/Photo/colodki.jpg" },
+                  new Spicok() {Name = "Тормозные диски", Price = 3890,Foto = "/Photo/torm disci.jpg" },
+                  new Spicok() {Name = "Шрус", Price = 5690,Foto = "/Photo/shrus.jpg" },
+                  new Spicok() {Name = "Наконечник", Price = 6790,Foto = "/Photo/naconech.jpg" },
+                  new Spicok() {Name = "Бескаркасные дворники", Price = 830,Foto = "/Photo/dvornici.jpg" },
+                  new Spicok() {Name = "Лобовое стекло", Price = 12399,Foto = "/Photo/lobovoe.jpg" },
+                  new Spicok() {Name = "Штампованный диск", Price = 1899,Foto = "/Photo/shtamp-disc.jpg" },
             };
 
-            spicokGrid.ItemsSource = Spicokk;
         }
+        private void Korzina_Click(object sender, RoutedEventArgs e)
+        {
+            List<Spicok> selectedSpicoks = new List<Spicok>();
+
+            foreach (var Spicok in Spicoks)
+            {
+                if (Spicok.IsSelected)
+                {
+                    selectedSpicoks.Add(Spicok);
+                }
+            }
+            Corzina corzina = new Corzina(selectedSpicoks);
+            //this.Content = corzina;
+            corzina.Show();
+        }     
     }
 }

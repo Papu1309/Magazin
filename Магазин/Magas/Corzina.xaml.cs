@@ -17,15 +17,20 @@ using Магазин.Datagrid;
 namespace Магазин.Magas
 {
     /// <summary>
-    /// Логика взаимодействия для Korzina.xaml
+    /// Логика взаимодействия для Corzina.xaml
     /// </summary>
-    public partial class Korzina : Page
+    public partial class Corzina : Window
     {
-        public Korzina()
+        public Corzina(List<Spicok> selectedSpicoks)
         {
             InitializeComponent();
-            
+            SelectedSpicoksListView.ItemsSource = selectedSpicoks;
+
         }
-        
+
+        private void btnCarculate_Click(object sender, RoutedEventArgs e)
+        {
+            //NavigationService.Navigate(new aa());
+        }
     }
 }

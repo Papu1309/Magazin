@@ -29,7 +29,7 @@ namespace Магазин.Pages
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Vid());
+            NavigationService.Navigate(new aa());
         }
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
