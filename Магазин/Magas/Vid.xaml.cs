@@ -57,6 +57,10 @@ namespace Магазин.Magas
                   new Spicok() {Name = "Бескаркасные дворники", Price = 830,Foto = "/Photo/dvornici.jpg" },
                   new Spicok() {Name = "Лобовое стекло", Price = 12399,Foto = "/Photo/lobovoe.jpg" },
                   new Spicok() {Name = "Штампованный диск", Price = 1899,Foto = "/Photo/shtamp-disc.jpg" },
+                  new Spicok() {Name = "Динамики", Price = 4799,Foto = "/Photo/dinamici.jpg" },
+                  new Spicok() {Name = "Автомагнитола", Price = 1599,Foto = "/Photo/magnitola.jpg" },
+                  new Spicok() {Name = "Руль", Price = 3599,Foto = "/Photo/rul.jpg" },
+                  new Spicok() {Name = "Приборная панель", Price = 14899,Foto = "/Photo/panel.jpg" },
             };
 
         }
