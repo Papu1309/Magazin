@@ -12,35 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Магазин.Datagrid;
 
 namespace Магазин.Magas
 {
     /// <summary>
-    /// Логика взаимодействия для Corzina.xaml
+    /// Логика взаимодействия для Doelen.xaml
     /// </summary>
-    public partial class Corzina : Window
+    public partial class Doelen : Page
     {
-        public Corzina(List<Spicok> selectedSpicoks)
+        public Doelen()
         {
-
             InitializeComponent();
-            //SelectedSpicoksListView.ItemsSource = selectedSpicoks;
-            SelectedSpicoksListView.ItemsSource = selectedSpicoks;
-            // Вычисляем сумму выбранных товаров
-            int totalAmount = selectedSpicoks.Sum(p => p.Price);
-            txbCarcul.Text = $"Общая сумма: {totalAmount} руб";
         }
 
         private void btnCarculate_Click(object sender, RoutedEventArgs e)
         {
-            
             NavigationWindow nw = new NavigationWindow();
-            nw.Content = new Doelen();
+            nw.Content = new SpasiboZaOplatu();
             nw.ShowDialog();
-            //nw.Show();
         }
-
-        
     }
 }

@@ -59,6 +59,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Magas\Oplata.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Magas\SpasiboZaOplatu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Magas\Vid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -71,9 +79,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Datagrid\Spicok.cs" />
+    <Compile Include="ListView\Spicok.cs" />
     <Compile Include="Magas\Corzina.xaml.cs">
       <DependentUpon>Corzina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magas\Oplata.xaml.cs">
+      <DependentUpon>Oplata.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magas\SpasiboZaOplatu.xaml.cs">
+      <DependentUpon>SpasiboZaOplatu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Magas\Vid.xaml.cs">
       <DependentUpon>Vid.xaml</DependentUpon>
@@ -186,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Korzinafoto\picnic_7489374.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo\логотип.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo\spasibo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

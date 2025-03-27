@@ -35,7 +35,7 @@ namespace Магазин.Magas
             SpicokListWiew.ItemsSource = Spicoks;
 
         }
-        private void LoadSpicoks()
+        public void LoadSpicoks()
         {
             Spicoks = new List<Spicok>
             {
@@ -60,7 +60,7 @@ namespace Магазин.Magas
             };
 
         }
-        private void Korzina_Click(object sender, RoutedEventArgs e)
+        public void Korzina_Click(object sender, RoutedEventArgs e)
         {
             List<Spicok> selectedSpicoks = new List<Spicok>();
 
@@ -74,6 +74,11 @@ namespace Магазин.Magas
             Corzina corzina = new Corzina(selectedSpicoks);
             //this.Content = corzina;
             corzina.Show();
-        }     
+        }
+
+        private void SpicokListWiew_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
