@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Магазин.Magas"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Doelen">
+      Title="Oplata">
 
     <Grid Background="Aqua" >
         <Grid.ColumnDefinitions>
@@ -35,9 +35,7 @@
         <TextBlock Text="CVV" Grid.Row="3" Grid.ColumnSpan="4"  Margin="80,14,85,14" FontSize="25" FontWeight="Bold" Grid.Column="2" ></TextBlock>
         <TextBox Grid.Row="3" Grid.Column="3" Margin="15,15,10,36" />
         <TextBlock Text="Дата выпсуска" Grid.Row="3" Grid.ColumnSpan="4"  Margin="98,11,67,19" FontSize="25" FontWeight="Bold" Grid.Column="4" ></TextBlock>
-        <!--<Calendar Grid.Column="5" Grid.ColumnSpan="2" Margin="30,58,15,51" Grid.RowSpan="4" Grid.Row="2" />-->
         <DatePicker Grid.Column="5" Grid.ColumnSpan="2" Margin="85,22,57,32" Grid.Row="3"/>
-        <Button x:Name="btnCarculate" Content="Оплатить" Click="btnCarculate_Click" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="3" Background="Green"/>
+        <Button x:Name="btnCarculate" Content="Оплатить" Click="btnCarculate_Click" FontSize="26" FontWeight="Bold" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="3" Background="Green" Margin="0,0,0,22"/>
     </Grid>
-
 </Page>

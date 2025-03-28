@@ -16,6 +16,6 @@
             </ListView.View>
         </ListView>
         <Button x:Name="btnCarculate" Content="Оплатить заказ" Click="btnCarculate_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Height="60" Background="Gold"></Button>
-        <TextBox IsReadOnly="True" x:Name="txbCarcul"  Width="140" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBox IsReadOnly="True" x:Name="txbCarcul"  Width="173" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
