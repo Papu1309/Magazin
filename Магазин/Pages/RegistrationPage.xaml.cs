@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Магазин.Magas;
+using System.Data.SqlClient;
+using Магазин.Connect;
 
 namespace Магазин.Pages
 {
@@ -21,6 +23,7 @@ namespace Магазин.Pages
     /// </summary>
     public partial class RegistrationPage : Page
     {
+        
         public RegistrationPage()
         {
             InitializeComponent();
@@ -28,7 +31,16 @@ namespace Магазин.Pages
 
         private void btnRegOchova_Click(object sender, RoutedEventArgs e)
         {
+            RegisterUser(txbLogin.Text, txbPassword.Text);
             NavigationService.Navigate(new aa());
+        }
+        private void RegisterUser( string email, string password)
+        {
+            Reg users = new Reg();
+            users.Email = email;
+            users.Password = password;
+            Connection.entities.Reg.Add(users);
+            Connection.entities.SaveChanges();
         }
     }
 }

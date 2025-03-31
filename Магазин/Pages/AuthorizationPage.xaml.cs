@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Магазин.Magas;
+using Магазин.Connect;
+using System.Data.SqlClient;
 
 namespace Магазин.Pages
 {
@@ -22,14 +24,26 @@ namespace Магазин.Pages
     /// </summary>
     public partial class AuthorizationPage : Page
     {
+        //private const string ConnectionString = "Server=your_server;Database=OnlineShop;Integrated Security=True;";
+        public static List<Reg> users { get; set; }
+        
         public AuthorizationPage()
         {
             InitializeComponent();
+            users = Connection.entities.Reg.ToList();
         }
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new aa());
+            if (loginTb != null && ParolTb != null) 
+            {
+                var NewUser = users.Where(users => users.Email == loginTb.Text && users.Password == ParolTb.Text).FirstOrDefault();
+                if (NewUser != null) 
+                {
+                    NavigationService.Navigate(new aa());
+                }
+            }
+         
         }
 
         private void btnReg_Click(object sender, RoutedEventArgs e)

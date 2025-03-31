@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Магазин
+namespace Магазин.Connect
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class reg_are_vxodEntities2 : DbContext
+    public partial class RegistrationEntities1 : DbContext
     {
-        public reg_are_vxodEntities2()
-            : base("name=reg_are_vxodEntities2")
+        public RegistrationEntities1()
+            : base("name=RegistrationEntities1")
         {
         }
     
@@ -25,5 +25,6 @@ namespace Магазин
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Reg> Reg { get; set; }
     }
 }
