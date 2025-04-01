@@ -43,7 +43,7 @@ namespace Магазин.Magas
                   new Spicok() {Name = "Амортизаторы", Price = 7840,Foto = "/Photo/amortiz.jpg" },
                   new Spicok() {Name = "Генератор", Price = 13700,Foto = "/Photo/generator.jpg" },
                   new Spicok() {Name = "Радиатор", Price = 9800,Foto = "/Photo/radiator.jpg" },
-                  new Spicok() {Name = "Ремень ГРМ c роликом в комплекте", Price = 1790,Foto = "/Photo/remen.jpg" },
+                  new Spicok() {Name = "Ремень ГРМ c роликом", Price = 1790,Foto = "/Photo/remen.jpg" },
                   new Spicok() {Name = "Воздушный фильтр", Price = 3700,Foto = "/Photo/vozd.jpg" },
                   new Spicok() {Name = "Масляной фильтр", Price = 680,Foto = "/Photo/masl filtr.jpg" },
                   new Spicok() {Name = "Водяной насос", Price = 3899,Foto = "/Photo/vod nasos.jpg" },

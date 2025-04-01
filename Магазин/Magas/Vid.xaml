@@ -10,7 +10,7 @@
     <Grid Margin="0,73,0,0" Background="Coral">
         <TextBlock Text="Автозапчасти"  HorizontalAlignment="Center"  FontSize="30" Margin="0,-63,0,382" />
         <Image Source="/Logo/логотип.jpg" HorizontalAlignment="Right" Width="1320"></Image>
-        <ListView x:Name="SpicokListWiew" HorizontalAlignment="Left" Width="1006" SelectionChanged="SpicokListWiew_SelectionChanged">
+        <ListView x:Name="SpicokListWiew" FontSize="30"  SelectionChanged="SpicokListWiew_SelectionChanged" Margin="0,0,-206,0">
             <ListView.View>
                 <GridView >
                     <GridViewColumn Header="Выбрать товар" Width="300" >
@@ -23,7 +23,7 @@
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Header="Название" Width="200" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Название" Width="350" DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Header="Стоимость" Width="200" DisplayMemberBinding="{Binding Price}" />
                 </GridView>
             </ListView.View>
