@@ -31,16 +31,16 @@ namespace Магазин.Pages
 
         private void btnRegOchova_Click(object sender, RoutedEventArgs e)
         {
-            //RegisterUser(txbLogin.Text, txbPassword.Text);
+            RegisterUser(txbLogin.Text, txbPassword.Text);
             NavigationService.Navigate(new aa());
         }
-        //private void RegisterUser( string email, string password)
-        ////{
-        ////    Reg users = new Reg();
-        ////    users.Email = email;
-        ////    users.Password = password;
-        ////    Connection.entities.Reg.Add(users);
-        ////    Connection.entities.SaveChanges();
-        //}
+        private void RegisterUser(string email, string password)
+        {
+            Reg users = new Reg();
+            users.Email = email;
+            users.Password = password;
+            Connection.entities.Reg.Add(users);
+            Connection.entities.SaveChanges();
+        }
     }
 }

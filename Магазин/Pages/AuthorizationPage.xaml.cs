@@ -24,13 +24,12 @@ namespace Магазин.Pages
     /// </summary>
     public partial class AuthorizationPage : Page
     {
-        //private const string ConnectionString = "Server=your_server;Database=OnlineShop;Integrated Security=True;";
         public static List<Reg> users { get; set; }
         
         public AuthorizationPage()
         {
             InitializeComponent();
-            //users = Connection.entities.Reg.ToList();
+            users = Connection.entities.Reg.ToList();
         }
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
