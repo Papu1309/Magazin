@@ -8,6 +8,6 @@ namespace Магазин.Connect
 {
     public class Connection
     {
-        public static RegistrationEntities1 entities = new RegistrationEntities1();
+        public static RegistrationEntities2 entities = new RegistrationEntities2();
     }
 }
